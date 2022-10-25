@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Nick Polydorides Research</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Computational Imaging & Data Analytics<span class="logo_colour"></span></a></h1>
+          <h2>Part of the Institute for Digital Communications</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="software.html">Software</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3><b>Latest News</b></h3>
+            
+        <h4><font color="red">We are looking for 2 PhD students.</font></h4>
+        <h5>Topics include machine learningn assisted imaging and big data sketching.</h5><a href="https://www.findaphd.com/search/ProjectDetails.aspx?PJID=101864" target="_blank">First position</a> and <a https://www.findaphd.com/search/ProjectDetails.aspx?PJID=101863 target="_blank">Second position</a>
+        <p></p>
+          
+        <h4><font color="red">We are extending our collaboration with Harris Corporation for another 2 years.</font></h4>
+        <h5>Hyperspectral imaging and non-destructive testing.</h5><a href="http://www.harris.com" target="_blank">Harris Corporation</a>
+        <p></p>
+        
+        <h4><font color="red">Presentation at Frontiers of Uncertainty Quantification</font></h4>
+        <h5>We have presented our work on forward UQ for Maxwell's at the Frontiers of UQ meeting in Pavia</h5>
+        <a href="https://frontuq18.org" target="_blank">Read more</a><br />    
+        <p></p>
+            
+        <h4><font color="red">Presentation at World Congress on Industrial Process Tomography</font></h4>
+        <h5>We have presented our work on spectral infrared tomography and the CIDAR project.</h5>
+        <a href="https://www.isipt.org/wcipt9" target="_blank">Read more</a><br />
+        <p></p>  
+        
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+          <p></p>
+      
+          
+        <h1>Randomised linear algebra for process analytics</h1>
+        
+        
+        <h4 align="justify">Randomised algebra for real-time process analytics. This EPSRC funded project aims to explore tools in randomised numerical linear algebra in the numerical solution of partial differential equations and associated inverse problems. In principle, the aim is to replace deterministic floating-point operations with sample-based averages estimated by randomly selecting elements of the matrices and vectors involved. When optimally implemented, randomised algebra yields low dimensional ‘equivalent’ systems after a small amount of samples, leading to an estimated solution of low statistical error without performing any high-dimensional computations. <h4></h4>  
+        
+        <a href="./sampA.png"><img src="./sampA.png" width="50%" border="0"><a href="./sampD.png"><img src="./sampD.png" width="50%" border="0"></a>    
+        <p align="justify"><h4 align="justify">An example illustrating a scheme for sampling-based estimation of matrix-vector  multiplication. Consider for example the case of estimating c=x'A'Ax, where A is a matrix of smooth srtucture similar to the one depicted on the panel to the left but at arbitrarily large dimension, x is a Gaussian vector and prime denotes transposition. The result of this operation c can be computed deterministically by adding the elements of the matrix to the right that has a relatively small number of non-zero elements. If the matrix is extremely large and cannot be assembeled and stored then we can estimate c by simulation. Our quasi-Monte Carlo scheme based on important sampling principles allows to design sub-optimal sampling distributions. The white crosses on the left panel mark the sampled elements of the matrix to be sumed up.</h4>    
+        
+        <ul>
+          <li><p align="justify">N. Polydorides, M. Wang, and D. P. Bertsekas, <a href="https://link.springer.com/chapter/10.1007%2F978-3-642-27440-4_36" target="_blank">"A Quasi Monte Carlo method for large scale inverse problems"</a> in "Monte Carlo and Quasi-Monte Carlo Methods 2010", by H. Wozniakowski and L. Plaskota (eds), Springer-Verlag.</p></li>
+          <li><p align="justify">N. Polydorides, M. Wang, and D. P. Bertsekas, <a href="http://web.mit.edu/dimitrib/www/inverse.pdf" target="_blank">"Approximate Solution of Large-Scale Linear Inverse Problems with Monte Carlo Simulation"</a>, Lab. for Information and Decision Systems Report LIDS-P-2822, MIT, November 2009.</p></li>
+        <li><p align="justify">M. Wang, N. Polydorides, and D. P. Bertsekas, <a href="http://www.princeton.edu/~mengdiw/pdfs/regression.pdf" target="_blank">"Approximate Simulation-Based Solution of Large-Scale Least Squares Problems"</a>, Lab. for Information and Decision Systems Report LIDS-P-2819, MIT, September 2009.</p></li>    
+        </ul>    
+        <hr>  
+            
+            
+        <h1>Electromagnetic modelling, imaging and uncertainty quantification</h1>
+         
+        <h4 align="justify">The motivation comes from the Controlled-Source Electromagnetic Method (CSEM) that aims to detect and image hydrocarbon reservoirs by using electromagnetic field measurements to obtain information about the conductivity profile of the sub-seabed. In this context the source of uncertainty stems from our incomplete knowledge on the electrical properties of the underpinning low-frequency electromagnetic model. To estimate the model's response in terms of the induced fields and measurements we use a probabilistic description based on prior information and formulate a forward uncertainty quantification problem of characterizing the uncertainty in the PDE solution and observations in response to that in the parameters. Conversely, inverse uncertainty quantification encompasses the statistical estimation and imaging of the unknown electrical parameters from the available observations, which can be cast as a Bayesian inverse problem. The contributions of the project focus on examining the aforementioned forward and inverse UQ problems for the low-frequency, time-harmonic Maxwell equations, where the model uncertainty emanates from the lack of knowledge of the conductivity parameters.<h4></h4>    
+            
+        <a href="./stream3d.jpg" target="_blank"><img src="./stream3d.jpg" style="float: left; width: 35%; margin-left: 5%; margin-right: 7%;"></a><a href="./uq.png" target="_blank"><img src="./uq.png" style="float: left; width: 45%; margin-left: 7%; margin-bottom: 5%;"></a>
+        
+            
+            
+        <h4 align="justify">A FEM solution depicting the electric field of a dipole source in the CSEM model. Notice the dipole is positioned near the seabed and which includes a conductivity inhomogeneity (in black). Although the fields penetrate to reach the inhomogeneity their magnitude diminishes exponentially away from the source. The graph to the right depicts the variance in the stochastic FEM solution corresponding to a similar source arrangement when the electrical properties of the model are not uniquely specified, e.g. they are modelled as lognormal random fields. Images taken from the thesis of D. Kamilis. </h4>  
+            
+        <ul>
+        <li><p align="justify">D. Kamilis, "Uncertainty quantification for low-frequency Maxwell equations with stochastic conductivity models" <a href="./DK_PhD_thesis_2018.pdf" target="_blank">PhD thesis</a>, School of Engineering, University of Edinburgh, 2018.</p></li>
+        <li><p align="justify">D. Kamilis and N. Polydorides, <a href="http://www.homepages.ed.ac.uk/npolydor/marelec_slides.pdf" target="_blank">"Uncertainty quantification in the controlled source electromagnetic measurements"</a>, Presentation at MARELEC 2017, June 2017.</p></li>    
+        </ul>        
+        <hr>
+            
+        <h1>Gas imaging & spectroscopy</h1>
+        
+        <h4 align="justify">Gas imaging in the form of Chemical Species Tomography (CST) is a diagnostic modality for gases and other optically transparent fluids, based on measurements and models of spectroscopic absorption and laser attenuation. Although still in its early stages of development, CST is considered as an effective solution for imaging in-situ the concentration of chemical species such as pollutants in the exhaust plumes of gas turbines, aviation engines and power generators. Its application in the aerospace sector is motivated by the need to provide combustion diagnostics for jet engines in order to prevent malfunction and failure. At the same time, CST provides an adjunct tool for assessing the performance and environmental footprint of alternative, cleaner aviation fuels. Our efforts in this area are on imaging the species concentration and plume temperature from limited and sparse direct absorption and wavelength modulation spectroscopy data, using regularisation and Bayesian inferrence algorithms. This project is partially funded by an EPSRC platform grant in collaboration with coleagues from Strathclyde University.<h4></h4>  
+        
+        <a href="./cst_target.png"><img src="./cst_target.png" width="50%" border="0"></a><a href="./cst_image.png"><img src="./cst_image.png" width="50%" border="0"></a> <p></p>    
+        <p align="justify">To the left, a target CO2 concentration profile and to the right its reconstructed solution based on an algorithm involving subspace projection and regularisation discussed <a href="http://rspa.royalsocietypublishing.org/content/royprsa/472/2187/20150875.full.pdf" target="_blank">here</a>. The image has 4900 pixels resolution and has been reconstructed from 126 noise-infused data, scattered among 6 projection angles.</p> 
+        
+        <ul>
+        <li><p align="justify">N. Polydorides, S.A. Tsekenis, H. McCann, V.-D. A. Prat, P. Wright, <a href="http://rspa.royalsocietypublishing.org/content/472/2187/20150875" target="_blank">"An efficient approach for limited-data chemical species tomography and its error bounds"</a> in Proc. R. Soc. A 2016 472 20150875; DOI: 10.1098/rspa.2015.0875, 2016.</p></li>
+        <li><p align="justify">N. Polydorides, A. Tsekenis, E. Fisher, A. Chighine, H. McCann, L. Dimiccoli, P. Wright, M. Lengden, T. Benoy, D. Wilson, G. Humphries and W. Johnstone, Walter, <a href="https://www.osapublishing.org/ao/abstract.cfm?uri=ao-57-7-B1" target="_blank">"Constrained models for optical absorption tomography"</a>, Applied Optics, 57(7), B1-B9, 2018</p></li>  
+        </ul>  
+            
+        <hr>
+            
+        <h1>Spectral X-ray tomography: combining reconstruction with classification</h1>
+        
+        <h4 align="justify">In this project, supported by Harris Corporation (US), we are investigating new image reconstruction approaches for X-ray tomography and non-destructive testing that utilise spectrally resolved photon absorption data. We are developing polyenergetic models that capture beam hardening phenomena to model the spectral absorption of X-rays as they propagate through media of approximately known mass attenuation coefficients. For the inverse problem we work to develop some new machine learning inspired approaches that unify image reconstruction and classification that can lead to image reconstruction from a small number of projections. <h4></h4>  
+        
+        <p>
+            </p>    
+        <hr>
+            
+        <p>
+            </p>    
+         <h4><b>OUR SPONSORS</b></h4>
+        <br>  
+       
+            <a href="http://www.epsrc.ac.uk" target="_blank"><img src="./Epsrclogo.png" style="float: left; width: 20%; margin-left: 10%; margin-right: 5%;"></a><a href="http://www.cleansky.eu" target="_blank"><img src="./cleansky2logo.jpeg" style="float: left; width: 25%; margin-left: 5%; margin-right: 5%; margin-top: -4%;"></a><a href="http://www.harris.com" target="_blank"><img src="./Harrislogo.jpg" style="float: left; width: 25%; margin-right: 1%;"></a>    
+            
+      </div>
+    </div>
+    <div id="footer">
+      Copyright &copy; Nick Polydorides | <a href="http://www.html5webtemplates.co.uk">Free CSS Templates</a>
+    </div>
+  </div>
+</body>
+</html>
