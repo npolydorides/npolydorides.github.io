@@ -118,7 +118,7 @@
         
         <hr>
 
-       <h1><b>Chemical species tomography for combustion diagnostics</b></h1>
+        <h1><b>Chemical species tomography for combustion diagnostics</b></h1>
 
         <p>
           Building upon our previous contributions to chemical species tomography for aviation gas turbine and jet exhausts, we develop computational frameworks to reconstruct gas profiles under severely limited data constraints. Our earlier work established highly efficient approaches for mapping chemical species in high-temperature, high-velocity flows, including the industrial multi-channel tomography setups validated in <a href="https://doi.org/10.1364/AO.57.0000B1" target="_blank">Polydorides et al. (2018)</a> and the sparse-data inversion techniques presented in <a href="https://royalsocietypublishing.org/rspa/article/472/2187/20150875/57123/An-efficient-approach-for-limited-data-chemical" target="_blank">Polydorides et al. (2016)</a>. Extending these principles, our frameworks have been successfully validated with real experimental data, as demonstrated in <a href="https://doi.org/10.1364/AO.467828" target="_blank">Upadhyay et al. (2022)</a>, leveraging underlying structural regularities to capture cross-sectional concentration profiles. Most recently, by fusing Large Eddy Simulation (LES) ground truths with a continuous Polar Fourier Transform (PFT) formulation and the Fourier Slice Theorem, we have developed a truncated series framework capable of reconstructing entire profiles from as few as four projection angles. This allows for the precise, real-time mapping of complex turbulent structures within combustor environments via low-dimensional angular coefficients, entirely bypassing dense, pixel-by-pixel grid inversions.
@@ -133,16 +133,16 @@
         
         <hr>
         
-        <h1><b>Online surrogate models for nonlinear heat transfer in additive manufacturing</b></h1>
+        <h1><b>Data analytics for Laser Powder Bed Fusion (Additive Manufacturing)</b></h1>
         
         <p>
-          This project aims at expediting numerical simulation based on the finite element method so that it becomes practical to use online in the context of additive manufacturing (3D printing). We focus on the computationally demanding non-linear heat transfer equation to simulate the phase transitions (powder, liquid, solid) during a powder bed fusion process. Exploiting the smooth properties of the heat kernel, we have been exploring ideas from Gaussian process emulators, model order reduction and randomised sketching in order to develop surrogates that are low-dimensional and can be used as tools for online analysis, including measuring the dimensions of the melt pool, and the anisotropy of the heat conductivity.
+          Our research in this domain accelerates the numerical analysis and monitoring of Laser Powder Bed Fusion (LPBF) to make high-fidelity process insights practical for online manufacturing control. In a pair of core journal publications, including our work on Gaussian process emulation in <a href="https://doi.org/10.1016/j.addma.2022.103090" target="_blank">Li and Polydorides (2022)</a> published in <i>Additive Manufacturing</i>, and our model order reduction framework in <a href="https://doi.org/10.1016/j.cma.2023.116168" target="_blank">Li and Polydorides (2023)</a> published in <i>Computer Methods in Applied Mechanics and Engineering</i>, we developed fast surrogate models designed to expedite the computationally intensive non-linear heat transfer simulations that govern powder-to-solid phase transitions. Exploiting the smooth properties of the heat kernel, these frameworks enable rapid estimation of transient melt pool geometry and local thermal anisotropy. Bringing these capabilities into manufacturing settings, our group is currently collaborating with the National Manufacturing Institute Scotland (<a href="https://www.nmis.scot/" target="_blank">NMIS</a>) under a High Value Manufacturing Catapult Researcher in Residence project. This current trajectory focuses on Scientific Machine Learning (SciML) paradigms, blending physics-informed constraints with data-driven modeling to achieve in-situ real-time anomaly detection and quality assurance from Optical Emission Spectroscopy (OES) data.
         </p>
         
         <div class="image-container">
           <img src="./LPBF.png" style="width: 45%; max-width: 400px;" alt="Laser Powder Bed Fusion printed metallic cubes" />
           <p class="caption">
-            <i><b>Experimental Validation:</b> Physical metallic test specimens printed via Laser Powder Bed Fusion (LPBF) used to empirically validate our fast surrogate models. The online emulators monitor transient melt pool footprints, layer-by-layer material transitions, and thermal conductivity properties directly during the fabrication process.</i>
+            <i><b>Experimental Validation:</b> Steel specimens printed via Laser Powder Bed Fusion (LPBF) at NMIS used to empirically validate our fast surrogate models and anomaly detection algorithms. Advanced data analytics and online emulators track transient melt pool footprints, layer-by-layer material transitions, and thermal anomaly vectors directly during the fabrication process.</i>
           </p>
         </div>
         
