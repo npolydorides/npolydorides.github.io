@@ -2,12 +2,51 @@
 <html>
 
 <head>
-  <title>Nick Polydorides Research</title>
-  <meta name="description" content="website description" />
-  <meta name="keywords" content="website keywords, website keywords" />
+  <title>Research | Computational Imaging & Data Analytics</title>
+  <meta name="description" content="Research themes and projects from the Computational Imaging & Data Analytics Group at the University of Edinburgh." />
+  <meta name="keywords" content="Nick Polydorides, Research, Randomised Linear Algebra, Atmospheric Dispersion, Surrogate Models, Finite Element Method" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
-        
+  
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    #content p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #333333;
+      text-align: justify;
+      margin-bottom: 18px;
+    }
+    #content h1 {
+      font-size: 24px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      color: #111111;
+      border-bottom: 2px solid #f4f4f4;
+      padding-bottom: 6px;
+    }
+    .image-container {
+      margin: 20px 0;
+      text-align: center;
+    }
+    .image-container img {
+      margin: 0 4px;
+    }
+    .caption {
+      font-size: 13px;
+      line-height: 1.5;
+      color: #666666;
+      margin-top: 8px;
+      text-align: justify;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid #e0e0e0;
+      margin: 35px 0;
+    }
+  </style>
 </head>
 
 <body>
@@ -15,125 +54,86 @@
     <div id="header">
       <div id="logo">
         <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="index.html">Computational Imaging & Data Analytics<span class="logo_colour"></span></a></h1>
-          <h2 style="font-size: 14px">Part of the Institute for Imaging, Data & Communications</h2>
+          <h1><a href="index.html">Computational Imaging & Data Analytics<span class="logo_colour"> </span></a></h1>
+          <h2 style="font-size: 14px; letter-spacing: 0.5px;">Part of the Institute for Data, Imaging & Communications (IDCOM)</h2>
         </div>
       </div>
       <div id="menubar">
         <ul id="menu">
-          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-          <li><a href="index.html" style="font-size: 18px">Home</a></li>
-          <li><a href="people.html" style="font-size: 18px">People</a></li>
-          <li><a href="research.html" style="font-size: 18px">Research</a></li>
-          <li><a href="publications.html" style="font-size: 18px">Publications</a></li>
-          <li><a href="software.html" style="font-size: 18px">Software</a></li>
+          <li><a href="index.html" style="font-size: 16px">Home</a></li>
+          <li><a href="people.html" style="font-size: 16px">People</a></li>
+          <li class="selected"><a href="research.html" style="font-size: 16px">Research</a></li>
+          <li><a href="publications.html" style="font-size: 16px">Publications</a></li>
+          <li><a href="software.html" style="font-size: 16px">Software</a></li>
         </ul>
       </div>
     </div>
-    <div id="site_content">
-      <div class="sidebar">
-   <!--
-        <!-- insert your sidebar items here -->
-  
-        
-      </div>
-      <div id="content">
     
-        <!-- insert the page content here -->
-          <p></p>
-      
-          
+    <div id="site_content">
+      <div id="content">
+        
         <h1><b>Randomised linear algebra for scientific computing</b></h1>
         
-        <h4 align="justify" style="font-size: 18px">Randomised algebra for real-time computing at scale addresses the challenges of numerical solution of partial differential equations and their associated inverse problems. This framework offers opportunity for exponential dimensionality reduction at the cost of a moderate loss of computational accuracy. When optimally implemented, randomised algebra yields low dimensional ‘equivalent’ sketches of the computational objects involved, thereby yielding estimated computational results of low statistical error without performing any high-dimensional computations. <h4></h4>  
+        <p>
+          Randomised algebra for real-time computing at scale addresses the challenges of numerical solution of partial differential equations and their associated inverse problems. This framework offers opportunity for exponential dimensionality reduction at the cost of a moderate loss of computational accuracy. When optimally implemented, randomised algebra yields low dimensional &lsquo;equivalent&rsquo; sketches of the computational objects involved, thereby yielding estimated computational results of low statistical error without performing any high-dimensional computations.
+        </p>
         
-        <a href="./webpics/sketched_sol.png"><img src="./webpics/sketched_sol.png" width="50%" border="0"><a href="./webpics/log_rel_err.png"><img src="./webpics/log_rel_err.png" width="50%" border="0"></a> <figcaption style="font-size: 14px"><i> Left, a sketched projected high-dimensional FEM solution of an elliptic equation and to the right the log of its relative error profile. Note the two distinct error features, the yellow crescent that corresponds to the subspace projection error and the random walks corresponding the sketching errors.</i> </figcaption>    
+        <div class="image-container">
+          <img src="./webpics/sketched_sol.png" style="width: 48%; display: inline-block; vertical-align: top;" alt="Sketched FEM solution" />
+          <img src="./webpics/log_rel_err.png" style="width: 48%; display: inline-block; vertical-align: top;" alt="Relative error profile" />
+          <p class="caption">
+            <i><b>Left:</b> A sketched projected high-dimensional FEM solution of an elliptic equation. <b>Right:</b> The log of its relative error profile. Note the two distinct error features: the yellow crescent that corresponds to the subspace projection error and the random walks corresponding to the sketching errors.</i>
+          </p>
+        </div>
         
-        <p>.
-            </p>
-            
-        <h4 align="justify" style="font-size: 18px">
-            Our efforts in this area are focused on randomising solvers for discretised PDEs in the context of finite element and finite difference time-domain methods, as well as computimng expectations between radom matrices and vectors. Central to this research direction, is the aim of sketching matrices with a prescribed spectrum, e.g. to preserve invertibility or contractive properties, while supressing their variance. 
-        </h4>    
+        <p>
+          Our efforts in this area are focused on randomising solvers for discretised PDEs in the context of finite element and finite difference time-domain methods, as well as computing expectations between random matrices and vectors. Central to this research direction is the aim of sketching matrices with a prescribed spectrum, e.g., to preserve invertibility or contractive properties, while suppressing their variance.
+        </p>
         
-        <ul>
-            
-        <li><p align="justify">R. Lung, Y. Wu, D. Kamilis and N. Polydorides, <a href="https://www.sciencedirect.com/science/article/abs/pii/S004578252030116X" target="_blank">"A sketched finite element method for elliptic models"</a>, Computer Methods in Applied Mechanics and Engineering, 2020.</p></li>
-            
-        <li><p align="justify">Y. Wu and N. Polydorides <a href="https://epubs.siam.org/doi/abs/10.1137/19M125604X" target="_blank">"A Multilevel Monte Carlo Estimator for Matrix Multiplication"</a>, SIAM Scientific Computing 2020.</p></li>   
-            
-        <li><p align="justify">N. Polydorides, M. Wang, and D. P. Bertsekas, <a href="https://link.springer.com/chapter/10.1007%2F978-3-642-27440-4_36" target="_blank">"A Quasi Monte Carlo method for large scale inverse problems"</a> in "Monte Carlo and Quasi-Monte Carlo Methods 2010", by H. Wozniakowski and L. Plaskota (eds), Springer-Verlag.</p></li>
-           
-        </ul>    
-        <hr>  
+        <hr>
         
-            
         <h1><b>Atmospheric dispersion imaging with off-beam optical backscatter signals</b></h1>
         
-        <h4 align="justify" style="font-size: 18px"> We are developing a method for fast detection and tomographic imaging of chemicals dispersed in the atmosphere. The method is equipped for imaging gas plumes of interest in near real-time and in 3D, none of which is possible with the current state of the art due to extremely weak signals. Despite the fact that it uses off-the-shelf pulsed sources, a key difference in our approach is the inclusion of wider fields-of-view in the detector which measure light that scattered multiple times.
-
-        In order to manage the added complexity caused by not knowing the exact trajectories of the measured photons and the need for a radiative transfer model, we exploit properties of turbulent dynamics within atmospheric plumes which impose natural regularity conditions and thereby reduce the dimensionality of the inverse problem. In being able to make use of the light that arrives at the detector from oblique directions, which typically reaches deeper inside the plume and is more strongly affected by the gas of interest, we achieve a more efficient acquisition process especially when the species of interest is hard to detect.</h4>  
+        <p>
+          We are developing a method for fast detection and tomographic imaging of chemicals dispersed in the atmosphere. The method is equipped for imaging gas plumes of interest in near real-time and in 3D, none of which is possible with the current state of the art due to extremely weak signals. Despite the fact that it uses off-the-shelf pulsed sources, a key difference in our approach is the inclusion of wider fields-of-view in the detector which measure light that scattered multiple times.
+        </p>
+        <p>
+          In order to manage the added complexity caused by not knowing the exact trajectories of the measured photons and the need for a radiative transfer model, we exploit properties of turbulent dynamics within atmospheric plumes which impose natural regularity conditions and thereby reduce the dimensionality of the inverse problem. In being able to make use of the light that arrives at the detector from oblique directions, which typically reaches deeper inside the plume and is more strongly affected by the gas of interest, we achieve a more efficient acquisition process especially when the species of interest is hard to detect.
+        </p>
         
-        <p>.</p>
-            
-        <a href="./webpics/smoothing_process.gif"><img src="./webpics/smoothing_process.gif" width="50%" border="0"></a><a href="./webpics/scanning_process.gif"><img src="./webpics/scanning_process.gif" width="50%" border="0"></a><figcaption style="font-size: 14px"><i> Left: Taking a hypothetical long term average results in smoothing of turbulent plumes. The remaining structure can be efficiently captured in a low-dimensional set of dispersion related parameters (black lines). Right: The scanning process involves sending a pulsed laser (red) towards the gas of interest and capturing light that reaches the detector within its field-of-view (orange). This is repeated for several directions.</i> </figcaption>    
-        
-        <p> .</p>
-            
-        <h4 align="justify" style="font-size: 18px"> Aside tracking the plume and its concentration the method can trace its origins and future trajectory according to the landscape and wind information while also providing an intuitive representation of the image which eliminates the need for post-processing and analysis of a pixel-based image. 
-        </h4>   
-  
-        <ul>
-            
-        <li><p align="justify">R. Lung and N. Polydorides, <a href="https://arxiv.org/abs/2304.06225" target="_blank">"Imaging of atmospheric dispersion processes with Differential Absorption Lidar"</a>, Preprint 2023.</p></li>
-            
-        <li><p align="justify">R. Lung <a href="./docfiles/presentation_IDCOM.pdf" target="_blank">"Imaging of atmospheric dispersion processes with Differential Absorption Lidar"</a>, Presentation at the University of Edinburgh, May 2023.</p></li>    
-        
-        </ul>
-            
-        <hr>   
-            
-          <h1><b>Online surrogate models for nonlinear heat transfer in additive manufacturing</b></h1>
-         
-        <h4 align="justify" style="font-size: 18px">This project aims at expediting numerical simulation based on the finite element method so that it becomes practical to use online in the context of additive manufacturing (3D printing). We focus on the computationally demanding non-linear heat transfer equation to simulate the phase transitions (powder, liquid, solid) during a powder bed fusion process. Exploiting the smooth properties of the heat kernel we have been exploring ideas from Gaussian processe emulators, model order reduction and randomised sketching in order to develop surrogates that are low-dimensional and can be used as tools for online analysis, eincluding measuring the dimensions of the melt pool, and the anisotropy of the heat conductivity. <h4></h4>    
-            
-        <a href="./webpics/meltpools.png" target="_blank"><img src="./webpics/meltpools.png" style="float: left; width: 95%; margin-left: 1%; margin-right: 1%;"></a><figcaption style="font-size: 14px"><i> Left, the computationally expensive FEM simulation of the temperature distribution illustrating the formation of a melt pool within an Aluminum alloy powder, and in the middle the respective surrogate approximation using projection on a small number of Gaussian basis functions. Right, the relative error between the two.</i> </figcaption>    
-        
-            
-        <ul>
-        <li><p align="justify">X. Li and N. Polydorides, "Time-efficient surrogate models of thermal modeling in laser powder bed fusion" <a href="https://www.sciencedirect.com/science/article/pii/S2214860422005115?via%3Dihub" target="_blank"> Elsevier Additive Manufacturing, 2022 </a></p></li>   
-        </ul>        
-        <hr>
-            
-        <h1><b>Electromagnetic uncertainty probagation</b></h1>
-         
-        <h4 align="justify" style="font-size: 18px">The motivation comes from the Controlled-Source Electromagnetic Method (CSEM) that aims to detect and image hydrocarbon reservoirs by using electromagnetic field measurements to obtain information about the conductivity profile of the sub-seabed. In this context the source of uncertainty stems from our incomplete knowledge on the electrical properties of the underpinning low-frequency electromagnetic model. To estimate the model's response in terms of the induced fields and measurements we use a probabilistic description based on prior information and formulate a forward uncertainty quantification problem of characterizing the uncertainty in the PDE solution and observations in response to that in the parameters. Conversely, inverse uncertainty quantification encompasses the statistical estimation and imaging of the unknown electrical parameters from the available observations, which can be cast as a Bayesian inverse problem. The contributions of the project focus on examining the aforementioned forward and inverse UQ problems for the low-frequency, time-harmonic Maxwell equations, where the model uncertainty emanates from the lack of knowledge of the conductivity parameters.</h4>    
-            
-        <a href="./stream3d.jpg" target="_blank"><img src="./stream3d.jpg" style="float: left; width: 35%; margin-left: 5%; margin-right: 7%;"></a><a href="./uq.png" target="_blank"><img src="./uq.png" style="float: left; width: 45%; margin-left: 7%; margin-bottom: 5%;"></a><figcaption style="font-size: 14px"><i> A FEM solution depicting the electric field of a dipole source in the CSEM model. Notice the dipole is positioned near the seabed and which includes a conductivity inhomogeneity (in black). Although the fields penetrate to reach the inhomogeneity their magnitude diminishes exponentially away from the source. The graph to the right depicts the variance in the stochastic FEM solution corresponding to a similar source arrangement when the electrical properties of the model are not uniquely specified, e.g. they are modelled as lognormal random fields.</i> </figcaption>    
-        
-            
-        <ul>
-        <li><p align="justify">D. Kamilis and N. Polydorides, "Uncertainty Quantification for Low-Frequency, Time-Harmonic Maxwell Equations with Stochastic Conductivity Models" <a href="https://epubs.siam.org/doi/abs/10.1137/17M1156010" target="_blank"> SIAM/ASA Journal on Uncertainty Quantification, 2018 </a></p></li>   
-        </ul>        
-        <hr>
-            
-            
-        <h1><b>Spectral X-ray tomography: Dictionary learning for spectral unmixing</b></h1>
-        
-            <h4 align="justify" style="font-size: 18px">This project aims to reconstruct 3D images from spectrally resolved X-ray CT (aka Spectral Photon Counting CT) measurements. This new modality applies to biomedical imaging as well as material characterisation and superseds the classical scalar (density) X-ray CT in that, aside the anatomical information it provides, it can also characterise the chemical composition of the imaged body in terms of its attenuation spectrum, thus enabling a simultaneous imaging and domain classification. They key scientific question is how to effectively estimate what materials are included in the domain (this is the ill-posed spectral unmixing problem) by building a suitable dictionary to be used for image reconstruction. We are developing polyenergetic models that capture beam hardening phenomena to model the nonlinear spectral attenuation of X-rays as they propagate through media. For the inverse problem we work to develop deep-learning image reconstruction algorithms that unify reconstruction and classification in a synergistic way to lead to image reconstruction from a small number of spectral projections. Biomedical data from calcified human valves are readily available courtesy of our industrial collaborators <a href="https://www.marsbioimaging.com" target="_blank"> MARSBioimaging. </a></h4>  
-        
-        <p></p>    
-        
-        <ul>
-        <li><p align="justify">D. Kamilis, M. Blatter and N. Polydorides, "Learned Spectral Computed Tomography" <a href="https://arxiv.org/abs/2003.04138" target="_blank"> ArXiv preprint, 2020.</a></p></li>   
-        </ul>           
-           
+        <div class="image-container">
+          <img src="./webpics/smoothing_process.gif" style="width: 48%; display: inline-block; vertical-align: top;" alt="Smoothing process" />
+          <img src="./webpics/scanning_process.gif" style="width: 48%; display: inline-block; vertical-align: top;" alt="Scanning process" />
+          <p class="caption">
+            <i><b>Left:</b> Taking a hypothetical long-term average results in smoothing of turbulent plumes. The remaining structure can be efficiently captured in a low-dimensional set of dispersion-related parameters (black lines). <b>Right:</b> The scanning process involves sending a pulsed laser (red) towards the gas of interest and capturing light that reaches the detector within its field-of-view (orange). This is repeated for several directions.</i>
+          </p>
         </div>
+        
+        <p>
+          Aside tracking the plume and its concentration, the method can trace its origins and future trajectory according to the landscape and wind information while also providing an intuitive representation of the image which eliminates the need for post-processing and analysis of a pixel-based image.
+        </p>
+        
+        <hr>
+        
+        <h1><b>Online surrogate models for nonlinear heat transfer in additive manufacturing</b></h1>
+        
+        <p>
+          This project aims at expediting numerical simulation based on the finite element method so that it becomes practical to use online in the context of additive manufacturing (3D printing). We focus on the computationally demanding non-linear heat transfer equation to simulate the phase transitions (powder, liquid, solid) during a powder bed fusion process. Exploiting the smooth properties of the heat kernel, we have been exploring ideas from Gaussian process emulators, model order reduction and randomised sketching in order to develop surrogates that are low-dimensional and can be used as tools for online analysis, including measuring the dimensions of the melt pool, and the anisotropy of the heat conductivity.
+        </p>
+        
+        <div class="image-container">
+          <img src="./webpics/meltpools.png" style="width: 98%; max-width: 700px; display: block; margin: 0 auto;" alt="Melt pool simulations" />
+          <p class="caption">
+            <i><b>Left:</b> The computationally expensive FEM simulation of the temperature distribution illustrating the formation of a melt pool within an Aluminum alloy powder. <b>Middle:</b> The respective surrogate approximation using projection on a small number of Gaussian basis functions. <b>Right:</b> The relative error between the two.</i>
+          </p>
+        </div>
+        
+      </div>      
     </div>
     
-            <div id="footer">
-      Copyright &copy; Nick Polydorides | <a href="http://www.html5webtemplates.co.uk">Free CSS Templates</a>
+    <div id="footer">
+      Copyright &copy; Nick Polydorides 2026 | <a href="http://www.html5webtemplates.co.uk">Free CSS Templates</a>
     </div>
+  </div>
 </body>
 </html>
