@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Research | Computational Imaging & Data Analytics</title>
+  <meta name="description" content="Research themes and projects from the Computational Imaging & Data Analytics Group at the University of Edinburgh." />
+  <meta name="keywords" content="Nick Polydorides, Research, Randomised Linear Algebra, Atmospheric Dispersion, Surrogate Models, Finite Element Method" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+  
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    /* Forces the content area to span the full width of the white background */
+    #content {
+      width: 100% !important;
+      float: none !important;
+      box-sizing: border-box;
+      padding: 10px 20px;
+    }
+    #content p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #333333;
+      text-align: justify;
+      margin-bottom: 18px;
+    }
+    #content h1 {
+      font-size: 24px;
+      margin-top: 35px;
+      margin-bottom: 15px;
+      color: #111111;
+      border-bottom: 2px solid #f4f4f4;
+      padding-bottom: 6px;
+    }
+    .image-container {
+      margin: 25px 0;
+      text-align: center;
+      width: 100%;
+    }
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #eaeaea;
+      border-radius: 4px;
+    }
+    .caption {
+      font-size: 13px;
+      line-height: 1.5;
+      color: #555555;
+      margin-top: 10px;
+      padding: 0 10px;
+      text-align: justify;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid #e0e0e0;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Computational Imaging & Data Analytics<span class="logo_colour"> </span></a></h1>
+          <h2 style="font-size: 14px; letter-spacing: 0.5px;">Part of the Institute for Data, Imaging & Communications (IDCOM)</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html" style="font-size: 16px">Home</a></li>
+          <li><a href="people.html" style="font-size: 16px">People</a></li>
+          <li class="selected"><a href="research.html" style="font-size: 16px">Research</a></li>
+          <li><a href="publications.html" style="font-size: 16px">Publications</a></li>
+          <li><a href="software.html" style="font-size: 16px">Software</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div id="site_content">
+      <div id="content">
+        
+        <h1><b>Randomised linear algebra for scientific computing</b></h1>
+        
+        <p>
+          Our group specializes in integrating Randomised Numerical Linear Algebra (RNLA) with the Finite Element Method (FEM) to solve large-scale parametric elliptic PDEs in real time. In our foundational work, <a href="https://arxiv.org/abs/1907.09852" target="_blank">Lung et al. (2019)</a>, we proposed a sketched FEM framework that projects solutions onto a low-dimensional subspace and applies randomised statistical leverage-score sampling. This projection not only delivers multi-order speedups but naturally regularises the reduced system against sketching errors. 
+        </p>
+        
+        <div class="image-container">
+          <img src="./sketchy.png" style="width: 85%;" alt="Randomised sketching parameter field and error maps" />
+          <p class="caption">
+            <i><b>Left:</b> Spatial profile of an isotropic parameter field on a model with 23 million triangular elements. <b>Middle:</b> The respective deterministic projected FEM solution. <b>Right:</b> The absolute pointwise error of its sketched solution.</i>
+          </p>
+        </div>
+        
+        <p>
+          To expand these scaling capabilities, <a href="https://arxiv.org/abs/1904.00429" target="_blank">Wu and Polydorides (2020)</a> introduced a Multilevel Monte Carlo (MLMC) estimator for matrix multiplication by treating sampling index sizes analogously to grid refinements to drastically decrease the variance of high-dimensional products. Most recently, in <a href="https://arxiv.org/abs/2606.08817" target="_blank">Polydorides et al. (2026)</a>, we designed a low-variance approach tailored for digital twins and multi-query systems. By pairing parameter-oblivious leverage-score sampling with a control variates scheme and fusing forward and inverse sketches into a regularised estimator, this architecture significantly dampens statistical error bounds while preserving the structural stability of the underlying FEM formulation.
+        </p>
+        
+        <hr>
+        
+        <h1><b>Atmospheric dispersion imaging with off-beam optical backscatter</b></h1>
+        
+        <p>
+          We are developing a method for fast detection and tomographic imaging of chemicals dispersed in the atmosphere, enabling near real-time 3D tracking of gas plumes that remains impossible under weak-signal constraints in current setups. As outlined in the SIAM work by <a href="https://arxiv.org/abs/2304.06225" target="_blank">Lung and Polydorides (2024)</a>, our approach utilises wider fields-of-view in the detector to explicitly leverage high-order multiple scattering responses from standard pulsed laser sources. To manage the added complexity of unknown photon trajectories and radiative transfer modeling, we exploit properties of turbulent dynamics within atmospheric plumes which naturally regularise and reduce the dimensionality of the inverse problem. By collecting light from oblique directions that penetrates deeper into the plume where interactions are strongest, we achieve a highly efficient acquisition process, especially when dealing with hard-to-detect chemical species.
+        </p>
+        
+        <div class="image-container">
+          <img src="./DIAL.png" style="width: 85%; margin-bottom: 20px;" alt="DIAL system schematic configuration" />
+          <p class="caption">
+            <i><b>Lidar Scanning Configuration:</b> Schematic of the Differential Absorption Lidar (DIAL) instrument mapping a gas plume. The architecture utilizes a narrow field-of-view (FOV) channel to catch direct single-backscattering events alongside a wide FOV detector designed to capture high-order multiple scattering responses over varied impact angles. Image credit: R. Lung </i>
+          </p>
+        </div>
+        
+        <hr>
+
+        <h1><b>Chemical species tomography for combustion diagnostics</b></h1>
+
+        <p>
+          Building upon our previous contributions to chemical species tomography for aviation gas turbine and jet exhausts, we develop computational frameworks to reconstruct gas profiles under severely limited data constraints. Our earlier work, such as the industrial multi-channel tomography setups validated in <a href="https://strathprints.strath.ac.uk/61864/" target="_blank">Terzija et al. (2017)</a> and the sparse-data inversion techniques presented in <a href="https://royalsocietypublishing.org/rspa/article/472/2187/20150875/57123/An-efficient-approach-for-limited-data-chemical" target="_blank">Polydorides et al. (2016)</a>, established highly efficient approaches for mapping chemical species in high-temperature, high-velocity flows. Extending these principles, our current methods leverage underlying structural regularities to capture cross-sectional concentration footprints using a minimal number of projection moments. This allows for the precise, real-time mapping of complex turbulent structures within combustor environments while entirely bypassing dense, pixel-by-pixel grid inversions.
+        </p>
+
+        <div class="image-container">
+          <img src="./combustor.png" style="width: 85%;" alt="Tomographic plume moment reconstruction" />
+          <p class="caption">
+            <i><b>Left:</b> The true, highly complex cross-sectional species concentration profile within a turbulent flow domain. <b>Right:</b> The smooth, computationally efficient tomographic profile reconstructed using only 13 moments, leveraging underlying structural regularities to bypass dense, pixel-by-pixel grid inversions.</i>
+          </p>
+        </div>
+        
+        <hr>
+        
+        <h1><b>Online surrogate models for nonlinear heat transfer in additive manufacturing</b></h1>
+        
+        <p>
+          This project aims at expediting numerical simulation based on the finite element method so that it becomes practical to use online in the context of additive manufacturing (3D printing). We focus on the computationally demanding non-linear heat transfer equation to simulate the phase transitions (powder, liquid, solid) during a powder bed fusion process. Exploiting the smooth properties of the heat kernel, we have been exploring ideas from Gaussian process emulators, model order reduction and randomised sketching in order to develop surrogates that are low-dimensional and can be used as tools for online analysis, including measuring the dimensions of the melt pool, and the anisotropy of the heat conductivity.
+        </p>
+        
+        <div class="image-container">
+          <img src="./LPBF.png" style="width: 45%; max-width: 400px;" alt="Laser Powder Bed Fusion printed metallic cubes" />
+          <p class="caption">
+            <i><b>Experimental Validation:</b> Physical metallic test specimens printed via Laser Powder Bed Fusion (LPBF) used to empirically validate our fast surrogate models. The online emulators monitor transient melt pool footprints, layer-by-layer material transitions, and thermal conductivity properties directly during the fabrication process.</i>
+          </p>
+        </div>
+        
+      </div>      
+    </div>
+    
+    <div id="footer">
+      Copyright &copy; Nick Polydorides 2026 | <a href="http://www.html5webtemplates.co.uk">Free CSS Templates</a>
+    </div>
+  </div>
+</body>
+</html>
