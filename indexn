@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Prof. Nick Polydorides | Computational Imaging & Data Analytics</title>
+  <meta name="description" content="Homepage of the Computational Imaging & Data Analytics Group at the University of Edinburgh." />
+  <meta name="keywords" content="Computational Imaging, Data Analytics, Inverse Problems, Additive Manufacturing, Edge Computing" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+  
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    #content p, #content li {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333333;
+      text-align: justify;
+    }
+    #content h2 {
+      font-size: 22px;
+      margin-top: 25px;
+      margin-bottom: 12px;
+      color: #111111;
+      border-bottom: 1px solid #eeeeee;
+      padding-bottom: 5px;
+    }
+    #content ul {
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+    #content li {
+      margin-bottom: 10px;
+    }
+    .contact-info {
+      font-size: 14px !important;
+      line-height: 1.5;
+      color: #555555;
+      background: #f9f9f9;
+      padding: 12px;
+      border-left: 3px solid #cccccc;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Computational Imaging & Data Analytics<span class="logo_colour"> </span></a></h1>
+          <h2 style="font-size: 14px; letter-spacing: 0.5px;">Part of the Institute for Data, Imaging & Communications (IDCOM)</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li class="selected"><a href="index.html" style="font-size: 16px">Home</a></li>
+          <li><a href="people.html" style="font-size: 16px">People</a></li>
+          <li><a href="research.html" style="font-size: 16px">Research</a></li>
+          <li><a href="publications.html" style="font-size: 16px">Publications</a></li>
+          <li><a href="software.html" style="font-size: 16px">Software</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div id="site_content">
+      
+      <div class="sidebar">
+        <h3><b>News</b></h3>
+        
+        <h3 style="color: #d9383a; font-size: 18px; margin-bottom: 10px; margin-top: 15px;"><b>Open PhD Positions</b></h3>
+        <p style="font-size: 14px; line-height: 1.4; font-weight: bold; margin-bottom: 10px; color: #222222;">
+          We are currently seeking two outstanding PhD candidates for the following research projects:
+        </p>
+
+        <ul style="font-size: 13px; line-height: 1.5; text-align: justify; margin-bottom: 15px; padding-left: 15px;">
+          <li style="margin-bottom: 8px;">
+            <b>Topic 1:</b> Scientific Machine Learning (SciML) for optimal randomized sketching.
+          </li>
+          <li style="margin-bottom: 8px;">
+            <b>Topic 2:</b> Scientific Machine Learning for kernel-based hypothesis testing and anomaly detection in additive manufacturing and optical lithography applications.
+          </li>
+        </ul>
+
+        <p style="font-size: 13px; line-height: 1.4; text-align: justify; margin-bottom: 12px; color: #555555;">
+          Additional topics may become available subject to forthcoming industrial and research funding. Prospective applicants are highly encouraged to email <b>Nick Polydorides</b> to discuss their academic background prior to formal application.
+        </p>
+
+        <p style="font-size: 13px; font-weight: bold; color: #d9383a; margin-top: 5px;">
+          Application Deadline: 20/12/2026
+        </p>
+      </div>
+
+      <div id="content">
+        <h2><b>Welcome</b></h2>
+        <p>
+          Welcome to the homepage of the Computational Imaging & Data Analytics Group at the 
+          <a href="https://www.eng.ed.ac.uk" target="_blank">School of Engineering</a> of the 
+          <a href="http://www.ed.ac.uk" target="_blank">University of Edinburgh</a>. 
+          The group is led by Prof. Nick Polydorides, Chair of Computational Engineering.
+        </p>
+          
+        <h2><b>Overview</b></h2>
+        <p>
+          Our research group develops advanced mathematical and computational frameworks to model, image, and control complex engineering and physical systems. Our current work is structured around three core pillars:
+        </p>
+        
+        <ul>
+          <li>
+            <b>Dispersion Modeling & Imaging:</b> Advancing the computational visualization and analysis of fluid transport phenomena, specifically turbulent gas plumes and combustion.
+          </li>
+          <li>
+            <b>Streaming Additive Manufacturing Analytics:</b> Developing data-driven, in-situ monitoring algorithms for 3D printing processes to detect defects and analyze material deposition in real time.
+          </li>
+          <li>
+            <b>Probabilistic Numerics for Edge Computing:</b> Leveraging randomized numerical linear algebra (RandNLA) to significantly lower memory footprints and accelerate approximate algorithms for real-time edge devices.
+          </li>
+        </ul>
+          
+        <h2><b>Interested in joining us?</b></h2>
+        <p style="color: #333333;">
+          We welcome inquiries from highly motivated individuals eager to bridge rigorous mathematical theory with advanced computational applications. If you possess a strong foundational background in the mathematical sciences (ideally an MSc or equivalent degree) and are looking to pursue a PhD focused on inverse problems, numerical analysis, or RandNLA, please get in touch to discuss potential projects.
+        </p>  
+          
+        <h2><b>Contact Information</b></h2> 
+        <p class="contact-info">
+          Room 2.10, Alexander Graham Bell Building &nbsp;|&nbsp; School of Engineering &nbsp;|&nbsp; King's Buildings Campus &nbsp;|&nbsp; EH9 3JL, Edinburgh, UK <br />
+          <b>Tel:</b> +44 (0)131 650 2769 &nbsp;|&nbsp; <b>Email:</b> n.polydorides [at] ed.ac.uk
+        </p>
+        
+        </div>
+    </div>
+    
+    <div id="footer">
+      Copyright &copy; Nick Polydorides 2026 | <a href="http://www.html5webtemplates.co.uk">Free CSS Templates</a>
+    </div>
+  </div>
+</body>
+</html>
